@@ -1,11 +1,11 @@
-package com.cydeo.pages;
+package com.G7.test.pages;
 
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class VehiclePage extends BasePage{
+public class VehiclePage extends BasePage {
 
     public VehiclePage() {
 

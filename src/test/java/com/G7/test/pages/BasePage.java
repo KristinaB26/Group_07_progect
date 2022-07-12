@@ -1,4 +1,4 @@
-package com.cydeo.pages;
+package com.G7.test.pages;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;

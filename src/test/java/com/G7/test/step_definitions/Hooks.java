@@ -1,4 +1,4 @@
-package com.cydeo.step_definitions;
+package com.G7.test.step_definitions;
 
 import com.cydeo.pages.LoginPage;
 import com.cydeo.utilities.BrowserUtils;

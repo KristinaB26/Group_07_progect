@@ -1,4 +1,4 @@
-package com.cydeo.pages;
+package com.G7.test.pages;
 
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends BasePage{
+public class LoginPage extends BasePage {
     public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }

@@ -1,4 +1,4 @@
-package com.cydeo.runner;
+package com.G7.test.runner;
 
 
 import io.cucumber.junit.Cucumber;

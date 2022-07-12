@@ -1,8 +1,7 @@
-package com.cydeo.step_definitions;
+package com.G7.test.step_definitions;
 
-import com.cydeo.pages.LoginPage;
-import com.cydeo.pages.VehiclePage;
-import com.cydeo.utilities.BrowserUtils;
+import com.G7.test.Utilities.BrowserUtils;
+import com.G7.test.pages.VehiclePage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
