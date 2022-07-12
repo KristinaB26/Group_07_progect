@@ -1,9 +1,9 @@
 package com.G7.test.step_definitions;
 
-import com.cydeo.pages.LoginPage;
-import com.cydeo.utilities.BrowserUtils;
-import com.cydeo.utilities.ConfigurationReader;
-import com.cydeo.utilities.Driver;
+import com.G7.test.pages.LoginPage;
+import com.G7.test.Utilities.BrowserUtils;
+import com.G7.test.Utilities.ConfigurationReader;
+import com.G7.test.Utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;

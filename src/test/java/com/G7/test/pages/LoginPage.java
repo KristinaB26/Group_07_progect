@@ -1,7 +1,8 @@
 package com.G7.test.pages;
 
-import com.cydeo.utilities.ConfigurationReader;
-import com.cydeo.utilities.Driver;
+import com.G7.test.Utilities.ConfigurationReader;
+import com.G7.test.Utilities.ConfigurationReader;
+import com.G7.test.Utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
