@@ -11,6 +11,19 @@ public class AC4StepDefs {
 
     @When("the user navigates to {string} ,{string}")
     public void the_user_navigates_to(String string, String string2) {
+        vehiclePage.navigateToModule(string,string2);
+        BrowserUtils.waitFor(2);
+    }
+    @Then("User should be able click reset button")
+    public void user_should_be_able_click_reset_button() {
+        vehiclePage.reset.click();
+    }
+
+
+}
+/*
+@When("the user navigates to {string} ,{string}")
+    public void the_user_navigates_to(String string, String string2) {
 
 
         vehiclePage.navigateToModule(string,string2);
@@ -23,5 +36,4 @@ public class AC4StepDefs {
         vehiclePage.reset.click();
 
     }
-
-}
+ */

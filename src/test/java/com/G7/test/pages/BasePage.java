@@ -1,6 +1,6 @@
 package com.G7.test.pages;
-import com.cydeo.utilities.BrowserUtils;
-import com.cydeo.utilities.Driver;
+import com.G7.test.Utilities.BrowserUtils;
+import com.G7.test.Utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -91,8 +91,8 @@ public abstract class BasePage {
     }
     public void goToMyUser(){
         waitUntilLoaderScreenDisappear();
-        BrowserUtils.waitForClickablility(userName, 5).click();
-        BrowserUtils.waitForClickablility(myUser, 5).click();
+        BrowserUtils.waitForClickablility((By) userName, 5).click();
+        BrowserUtils.waitForClickablility((By) myUser, 5).click();
 
     }
 
