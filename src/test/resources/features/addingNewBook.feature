@@ -1,6 +1,6 @@
-Feature: Adding new User
+Feature: Adding new Book
 
-	#Test case for adding a new user as a librarian from Book Module
+	#Test case for adding a new book as a librarian from Book Module
 	@B26G7-59 @B26G7-52 @LibraryCT
 	Scenario: Librarian should be able to add a new user from Books Module
 		Given librarian is on the homePage 

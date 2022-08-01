@@ -1,8 +1,8 @@
 package com.cydeo.step_definitions;
 
-import com.cydeo.pages.LibrarianBasePage;
+import com.cydeo.pages.LibrarianPage;
 import com.cydeo.pages.LoginPage;
-import com.cydeo.pages.StudentBasePage;
+import com.cydeo.pages.StudentPage;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Then;
@@ -14,8 +14,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ValidLogin {
 
     LoginPage loginPage = new LoginPage();
-    StudentBasePage studentBasePage = new StudentBasePage();
-    LibrarianBasePage librarianBasePage = new LibrarianBasePage();
+    StudentPage studentPage = new StudentPage();
+    LibrarianPage librarianPage = new LibrarianPage();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 
 
@@ -42,15 +42,15 @@ public class ValidLogin {
     @Then("verify that there are {string} models on the page")
     public void verifyThatThereAreModelsOnThePage(String num) {
         int count = 0;
-        BrowserUtils.waitForVisibility(studentBasePage.booksLink, 10);
-        if (studentBasePage.booksLink.isDisplayed()) {
+        BrowserUtils.waitForVisibility(studentPage.booksLink, 10);
+        if (studentPage.booksLink.isDisplayed()) {
             count++;
         }
 
        // Assert.assertTrue(studentBasePage.booksLink.isDisplayed());
 
-        BrowserUtils.waitForVisibility(studentBasePage.borrowingBookLink, 10);
-        if (studentBasePage.borrowingBookLink.isDisplayed()) {
+        BrowserUtils.waitForVisibility(studentPage.borrowingBookLink, 10);
+        if (studentPage.borrowingBookLink.isDisplayed()) {
             count++;
         }
 
@@ -80,18 +80,18 @@ public class ValidLogin {
     public void verify_that_there_are_models_on_the_page(Integer num) {
         int count = 0;
 
-        BrowserUtils.waitForVisibility(librarianBasePage.booksLink, 10);
-        if (librarianBasePage.booksLink.isDisplayed()) {
+        BrowserUtils.waitForVisibility(librarianPage.booksLink, 10);
+        if (librarianPage.booksLink.isDisplayed()) {
             count++;
         }
 
-        BrowserUtils.waitForVisibility(librarianBasePage.usersLink, 10);
-        if (librarianBasePage.usersLink.isDisplayed()) {
+        BrowserUtils.waitForVisibility(librarianPage.usersLink, 10);
+        if (librarianPage.usersLink.isDisplayed()) {
             count++;
         }
 
-        BrowserUtils.waitForVisibility(librarianBasePage.dashboardLink, 10);
-        if (librarianBasePage.dashboardLink.isDisplayed()) {
+        BrowserUtils.waitForVisibility(librarianPage.dashboardLink, 10);
+        if (librarianPage.dashboardLink.isDisplayed()) {
             count++;
         }
 
