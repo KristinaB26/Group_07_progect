@@ -40,7 +40,7 @@ public class AddingNewUser {
     public void librarian_enter_full_name_password_email_and_address() {
         librarianPage.fullNameBox.sendKeys("James Bond");
         librarianPage.passwordBox.sendKeys("23423453");
-        librarianPage.emailBox.sendKeys("bondjames@gmail.com");
+        librarianPage.emailBox.sendKeys("bondjames@gmail.com"); //every time try different emails because page doesn't accept same emails.
         librarianPage.addressBox.sendKeys("Florida");
     }
     @When("librarian click save changes")

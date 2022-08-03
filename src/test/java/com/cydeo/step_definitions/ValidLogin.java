@@ -30,7 +30,7 @@ public class ValidLogin {
 
     @When("student enters valid email address and password")
     public void studentEntersValidEmailAddressAndPassword() {
-        loginPage.InputEmailAddress.sendKeys("student1@library");
+        loginPage.InputEmailAddress.sendKeys("student1@library"); //try different emails and passwords
         loginPage.InputPassword.sendKeys("d5fv9BtX");
     }
 
