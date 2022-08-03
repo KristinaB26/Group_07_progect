@@ -62,10 +62,13 @@ public class LibrarianPage {
     @FindBy(id = "description")
     public WebElement description;
 
-    @FindBy(xpath = "//div[.='The user has been created']")  //TODO:check locator
+    @FindBy(xpath = "//div[@id='tbl_users_wrapper']//tbody//tr[2]//td[4]")  //Mehmet's way
+    public WebElement newUserEmail;
+
+    @FindBy(xpath = "//div[@class='toast-message']")
     public WebElement userHasBeenAddedMsg;
 
-    @FindBy(xpath = "//div[@id='toast-container']")  //TODO:check locator
+    @FindBy(xpath = "//div[@class='toast-message']")
     public WebElement newBookAddedMsg;
 
 

@@ -7,6 +7,9 @@ import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddingNewUser {
@@ -48,15 +51,15 @@ public class AddingNewUser {
     @Then("verify a new user is created")
     public void verify_a_new_user_is_created() {
 
-        //TODO: Verify
+        // Assert.assertEquals("bondjames2@gmail.com", librarianPage.newUserEmail.getText()); //Mehmet's Way
 
-//        wait.until(ExpectedConditions.alertIsPresent());
-//
-//        String expectedMsg="The user has been created.";
-//        String actualMsg=librarianPage.userHasBeenAddedMsg.getText();
-//
-//        Assert.assertEquals("Message is not verified!",expectedMsg,actualMsg);
+//Gizem's way
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='toast-message']")));
 
+        String expectedMsg = "The user has been created.";
+        String actualMsg = librarianPage.userHasBeenAddedMsg.getText();
+
+        Assert.assertEquals("Message is not verified!", expectedMsg, actualMsg);
 
     }
 

@@ -5,6 +5,9 @@ import com.cydeo.pages.LoginPage;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddingNewBook {
@@ -37,15 +40,12 @@ public class AddingNewBook {
     @Then("verify a new book is added")
     public void verify_a_new_book_is_added() {
 
-        //TODO: Verify a new book is added,Check locator
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='toast-message']")));
 
-//        wait.until(ExpectedConditions.alertIsPresent());
-//
-//        String expectedMsg = "The book has been created.";
-//        String actualMsg = librarianPage.newBookAddedMsg.getText();
-//
-//        Assert.assertEquals("Message is not verified!", expectedMsg, actualMsg);
+        String expectedMsg = "The book has been created.";
+        String actualMsg = librarianPage.newBookAddedMsg.getText();
+
+        Assert.assertEquals("Message is not verified!", expectedMsg, actualMsg);
     }
-
 
 }
